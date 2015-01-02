@@ -153,6 +153,8 @@ namespace ScreenSaver2d
         int slen;
         int shi;
         Vector2 vec;
+        string time_format = "%t";
+        DateTime dt = DateTime.Now;
         #endregion
         #region constants
         const int mouse_move = 7;
@@ -264,6 +266,12 @@ namespace ScreenSaver2d
             graphics.PreferredBackBufferHeight = rr.Height;
             graphics.IsFullScreen = true;
             graphics.ApplyChanges();
+
+            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\screensaver-time");
+            if (key == null)
+                time_format = "%t";
+            else
+                time_format = (string)key.GetValue("text");
         }
         protected override void LoadContent()
         {
@@ -313,7 +321,57 @@ namespace ScreenSaver2d
         protected override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
-            s = DateTime.Now.ToLongTimeString();
+            s = time_format;
+            dt = DateTime.Now;
+
+            #region replace variables, as per linux date(1) command
+            if (s.Contains("%D"))
+            {
+                s = s.Replace("%D", "%m/%d/%y");
+            }
+            if (s.Contains("%t"))
+            {
+                s = s.Replace("%t", dt.ToLongTimeString());
+            }
+            if (s.Contains("%a"))
+            {
+                s = s.Replace("%a", dt.DayOfWeek.ToString().Remove(3));
+            }
+            if (s.Contains("%A"))
+            {
+                s = s.Replace("%A", dt.DayOfWeek.ToString());
+            }
+            if (s.Contains("%b"))
+            {
+                s = s.Replace("%b", dt.Month.ToString().Remove(3));
+            }
+            if (s.Contains("%B"))
+            {
+                s = s.Replace("%B", dt.Month.ToString());
+            }
+            if (s.Contains("%c"))
+            {
+                // nope
+            }
+            if (s.Contains("%C"))
+            {
+                // nope
+            }
+            if (s.Contains("%d"))
+            {
+                s = s.Replace("%d", dt.Day.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%m"))
+            {
+                s = s.Replace("%m", dt.Month.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%y"))
+            {
+                s = s.Replace("%y", dt.Year.ToString().Remove(0, 2));
+            }
+            #endregion
+
+
             vec = sp.MeasureString(s);
             slen = (int)vec.X;
             shi = (int)vec.Y;

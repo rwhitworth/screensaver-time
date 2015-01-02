@@ -34,14 +34,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox
             // 
             this.textBox.Location = new System.Drawing.Point(20, 113);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(190, 20);
+            this.textBox.Size = new System.Drawing.Size(229, 20);
             this.textBox.TabIndex = 0;
+            this.textBox.Text = "%t";
             // 
             // label1
             // 
@@ -50,18 +52,18 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 25);
+            this.label1.Size = new System.Drawing.Size(239, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "ScreenSaver Demo";
+            this.label1.Text = "screensaver-time Demo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 47);
+            this.label2.Location = new System.Drawing.Point(21, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 13);
+            this.label2.Size = new System.Drawing.Size(210, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "By Frank McCown (Harding University)";
+            this.label2.Text = "ScreenSaver framework by Frank McCown";
             // 
             // label3
             // 
@@ -75,7 +77,7 @@
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point(24, 156);
+            this.okButton.Location = new System.Drawing.Point(20, 159);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 4;
@@ -87,7 +89,7 @@
             // 
             this.cancelButton.CausesValidation = false;
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(135, 156);
+            this.cancelButton.Location = new System.Drawing.Point(174, 159);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 5;
@@ -95,11 +97,21 @@
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "XNA code by Ryan Whitworth";
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 194);
+            this.ClientSize = new System.Drawing.Size(261, 194);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.label3);
@@ -109,7 +121,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "SettingsForm";
-            this.Text = "ScreenSaver Settings";
+            this.Text = "screensaver-time Settings";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +135,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -1,16 +1,25 @@
-﻿/*
- * SettingsForm.cs
+﻿#region Comments and license
+/*
+ * ScreenSaverForm.cs
  * By Frank McCown
  * Summer 2010
  * 
- * Feel free to modify this code.
+ * Modified Dec 2014 & Jan 2015 by Ryan Whitworth
+ * 
+ * Released by Frank McCown under the "Feel free to modify this code" license in 2010
+ * Released by Ryan Whitworth under the "Feel free to modify this code" license in 2015
+ * 
+ * http://www.harding.edu/fmccown/screensaver/screensaver.html
  */
+#endregion
 
+#region Using Statements
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using System.Security.Permissions;
+#endregion
 
 namespace ScreenSaver
 {
@@ -27,9 +36,9 @@ namespace ScreenSaver
         /// </summary>
         private void LoadSettings()
         {
-            RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Demo_ScreenSaver");
+            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\screensaver-time");
             if (key == null)
-                textBox.Text = "C# Screen Saver";
+                textBox.Text = "%t";
             else
                 textBox.Text = (string)key.GetValue("text");
         }
@@ -40,7 +49,7 @@ namespace ScreenSaver
         private void SaveSettings()
         {
             // Create or get existing subkey
-            RegistryKey key = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Demo_ScreenSaver");
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\screensaver-time");
 
             key.SetValue("text", textBox.Text);
         }
