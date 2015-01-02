@@ -32,7 +32,6 @@ C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSave
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.csproj.GenerateResource.Cache
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.exe
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\circle.png
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\ScreenSaver.exe
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\MonoGame.Framework.dll
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.MediaFoundation.dll
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.dll
@@ -58,5 +57,6 @@ C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\Scr
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.Properties.Resources.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.ScreenSaverForm.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.csproj.GenerateResource.Cache
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.exe
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\Gentium Book Basic 14.xnb
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\screensaver-time.exe
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\screensaver-time.exe

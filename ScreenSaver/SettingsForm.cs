@@ -38,9 +38,22 @@ namespace ScreenSaver
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\screensaver-time");
             if (key == null)
+            {
                 textBox.Text = "%t";
+                numericUpDown1.Value = 10;
+            }
             else
-                textBox.Text = (string)key.GetValue("text");
+            {
+                try
+                {
+                    textBox.Text = (string)key.GetValue("text");
+                    numericUpDown1.Value = (int)key.GetValue("screenclear");
+                }
+                catch (Exception)
+                {
+                    //throw;
+                }
+            }
         }
 
         /// <summary>
@@ -52,6 +65,7 @@ namespace ScreenSaver
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\screensaver-time");
 
             key.SetValue("text", textBox.Text);
+            key.SetValue("screenclear", numericUpDown1.Value.ToString());
         }
 
         private void okButton_Click(object sender, EventArgs e)

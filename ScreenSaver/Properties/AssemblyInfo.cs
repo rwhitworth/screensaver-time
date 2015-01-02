@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ScreenSaver")]
+[assembly: AssemblyTitle("screensaver-time")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ScreenSaver")]
-[assembly: AssemblyCopyright("Copyright © Ryan Whitworth 2015")]
+[assembly: AssemblyProduct("screensaver-time")]
+[assembly: AssemblyCopyright("Copyright © Frank McCown 2010 & Ryan Whitworth 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

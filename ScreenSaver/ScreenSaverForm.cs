@@ -155,6 +155,7 @@ namespace ScreenSaver2d
         Vector2 vec;
         string time_format = "%t";
         DateTime dt = DateTime.Now;
+        int screen_clear = 10;
         #endregion
         #region constants
         const int mouse_move = 7;
@@ -269,9 +270,22 @@ namespace ScreenSaver2d
 
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\screensaver-time");
             if (key == null)
+            {
                 time_format = "%t";
+                screen_clear = 10;
+            }
             else
-                time_format = (string)key.GetValue("text");
+            {
+                try
+                {
+                    time_format = (string)key.GetValue("text");
+                    screen_clear = (int)key.GetValue("screenclear");
+                }
+                catch (Exception)
+                {
+                    //throw;
+                }
+            }
         }
         protected override void LoadContent()
         {
@@ -329,6 +343,31 @@ namespace ScreenSaver2d
             {
                 s = s.Replace("%D", "%m/%d/%y");
             }
+            if (s.Contains("%r"))
+            {
+                s = s.Replace("%r", "%H:%M:%S %p");
+            }
+            if (s.Contains("%R"))
+            {
+                s = s.Replace("%R", "%H:%M");
+            }
+            if (s.Contains("%T"))
+            {
+                s = s.Replace("%T", "%H:%M:%S");
+            }
+            if (s.Contains("%x"))
+            {
+                // nope
+            }
+            if (s.Contains("%X"))
+            {
+                // nope
+            }
+
+            if (s.Contains("%F"))
+            {
+                s = s.Replace("%F", "%Y-%m-%d");
+            }
             if (s.Contains("%t"))
             {
                 s = s.Replace("%t", dt.ToLongTimeString());
@@ -341,9 +380,10 @@ namespace ScreenSaver2d
             {
                 s = s.Replace("%A", dt.DayOfWeek.ToString());
             }
-            if (s.Contains("%b"))
+            if ((s.Contains("%b")) || (s.Contains("%h")))
             {
                 s = s.Replace("%b", dt.Month.ToString().Remove(3));
+                s = s.Replace("%h", dt.Month.ToString().Remove(3));
             }
             if (s.Contains("%B"))
             {
@@ -361,16 +401,142 @@ namespace ScreenSaver2d
             {
                 s = s.Replace("%d", dt.Day.ToString().PadLeft(2, '0'));
             }
+            if (s.Contains("%e"))
+            {
+                s = s.Replace("%e", dt.Day.ToString().PadLeft(2, ' '));
+            }
+            if (s.Contains("%g"))
+            {
+                // nope
+            }
+            if (s.Contains("%G"))
+            {
+                // nope
+            }
+            if (s.Contains("%H"))
+            {
+                s = s.Replace("%H", dt.Hour.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%I"))
+            {
+                int hour = dt.Hour;
+                if (hour == 0)
+                {
+                    hour = 12;
+                }
+                if (hour > 12)
+                {
+                    hour -= 12;
+                }
+                s = s.Replace("%I", hour.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%j"))
+            {
+                s = s.Replace("%j", dt.DayOfYear.ToString().PadLeft(3, '0'));
+            }
+            if (s.Contains("%k"))
+            {
+                s = s.Replace("%H", dt.Hour.ToString().PadLeft(2, ' '));
+            }
+            if (s.Contains("%l"))
+            {
+                int hour = dt.Hour;
+                if (hour == 0)
+                {
+                    hour = 12;
+                }
+                if (hour > 12)
+                {
+                    hour -= 12;
+                }
+                s = s.Replace("%l", hour.ToString().PadLeft(2, ' '));
+            }
             if (s.Contains("%m"))
             {
                 s = s.Replace("%m", dt.Month.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%M"))
+            {
+                s = s.Replace("%M", dt.Minute.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%N"))
+            {
+                // nope
+                // DateTime does not have nanosecond resolution
+            }
+            if (s.Contains("%p"))
+            {
+                if (dt.Hour >= 12)
+                {
+                    s = s.Replace("%p", "PM");
+                }
+                if (dt.Hour < 12)
+                {
+                    s = s.Replace("%p", "AM");
+                }
+            }
+            if (s.Contains("%P"))
+            {
+                if (dt.Hour >= 12)
+                {
+                    s = s.Replace("%p", "pm");
+                }
+                if (dt.Hour < 12)
+                {
+                    s = s.Replace("%p", "am");
+                }
+            }
+            if (s.Contains("%s"))
+            {
+                // nope
+                // DateTime has no built-in 'epoch' value
+            }
+            if (s.Contains("%S"))
+            {
+                s = s.Replace("%S", dt.Second.ToString().PadLeft(2, '0'));
+            }
+            if (s.Contains("%t"))
+            {
+                // nope
+                // tab not needed AFAIK
+            }
+            if (s.Contains("%u"))
+            {
+                // nope
+            }
+            if (s.Contains("%U"))
+            {
+                // nope
+            }
+            if (s.Contains("%V"))
+            {
+                // nope
+            }
+            if (s.Contains("%w"))
+            {
+                // nope
+            }
+            if (s.Contains("%W"))
+            {
+                // nope
             }
             if (s.Contains("%y"))
             {
                 s = s.Replace("%y", dt.Year.ToString().Remove(0, 2));
             }
+            if (s.Contains("%Y"))
+            {
+                s = s.Replace("%Y", dt.Year.ToString());
+            }
+            if (s.Contains("%z"))
+            {
+                // nope
+            }
+            if (s.Contains("%Z"))
+            {
+                // nope
+            }
             #endregion
-
 
             vec = sp.MeasureString(s);
             slen = (int)vec.X;
@@ -383,7 +549,7 @@ namespace ScreenSaver2d
 
             spriteBatch.End();
 
-            if ((int)gameTime.TotalGameTime.TotalSeconds % 10 == 0)
+            if ((int)gameTime.TotalGameTime.TotalSeconds % screen_clear == 0)
             {
                 if (last_screen_clear != (int)gameTime.TotalGameTime.TotalSeconds)
                 {

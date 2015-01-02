@@ -35,13 +35,16 @@
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(20, 113);
+            this.textBox.Location = new System.Drawing.Point(98, 94);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(229, 20);
+            this.textBox.Size = new System.Drawing.Size(151, 20);
             this.textBox.TabIndex = 0;
             this.textBox.Text = "%t";
             // 
@@ -59,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 52);
+            this.label2.Location = new System.Drawing.Point(17, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 13);
             this.label2.TabIndex = 2;
@@ -68,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 97);
+            this.label3.Location = new System.Drawing.Point(17, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 3;
@@ -100,17 +103,40 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 39);
+            this.label4.Location = new System.Drawing.Point(17, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "XNA code by Ryan Whitworth";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Clear screen after X seconds:";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(169, 118);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(80, 20);
+            this.numericUpDown1.TabIndex = 8;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(261, 194);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
@@ -122,6 +148,7 @@
             this.MaximizeBox = false;
             this.Name = "SettingsForm";
             this.Text = "screensaver-time Settings";
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +163,7 @@
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
