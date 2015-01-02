@@ -1,0 +1,62 @@
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\16x16.bmp
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\1x1.bmp
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\2x2.bmp
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\4x4.bmp
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\64x64.bmp
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\str.jpg
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\Gentium Book Basic 14.xnb
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\ScreenSaver.exe
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\MonoGame.Framework.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.MediaFoundation.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.XAudio2.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct3D11.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.DXGI.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct2D1.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Lidgren.Network.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.XInput.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.RawInput.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.MediaFoundation.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.XAudio2.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct3D11.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.DXGI.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct2D1.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.XInput.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.RawInput.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\SharpDX.Direct3D9.xml
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.SettingsForm.resources
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.Properties.Resources.resources
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.ScreenSaverForm.resources
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.csproj.GenerateResource.Cache
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\obj\x86\Release\ScreenSaver.exe
+C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Release\Content\circle.png
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\ScreenSaver.exe
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\MonoGame.Framework.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.MediaFoundation.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.XAudio2.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct3D11.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.DXGI.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct2D1.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\Lidgren.Network.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.XInput.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.RawInput.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.MediaFoundation.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.XAudio2.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct3D11.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.DXGI.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct2D1.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.XInput.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.RawInput.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\SharpDX.Direct3D9.xml
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.csprojResolveAssemblyReference.cache
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.SettingsForm.resources
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.Properties.Resources.resources
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.ScreenSaverForm.resources
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.csproj.GenerateResource.Cache
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.exe
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\Gentium Book Basic 14.xnb
