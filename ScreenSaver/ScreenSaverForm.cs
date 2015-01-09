@@ -25,6 +25,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
+using System.Reflection;
 #endregion
 
 #region ScreenSaver namespace
@@ -100,7 +101,7 @@ namespace ScreenSaver
         }
         private void LoadSettings()
         {
-            textLabel.Text = @"ScreenSaver 1.0";
+            textLabel.Text = Assembly.GetExecutingAssembly().GetName().Name;
         }
         private void ScreenSaverForm_MouseMove(object sender, MouseEventArgs e)
         {
@@ -156,6 +157,7 @@ namespace ScreenSaver2d
         string time_format = "%t";
         DateTime dt = DateTime.Now;
         int screen_clear = 10;
+        int display_speed = 50;
         #endregion
         #region constants
         const int mouse_move = 7;
@@ -268,29 +270,36 @@ namespace ScreenSaver2d
             graphics.IsFullScreen = true;
             graphics.ApplyChanges();
 
+            #region read registry settings
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\screensaver-time");
             if (key == null)
             {
                 time_format = "%t";
                 screen_clear = 10;
+                display_speed = 50;
             }
             else
             {
                 try
                 {
-                    time_format = (string)key.GetValue("text");
-                    screen_clear = (int)key.GetValue("screenclear");
+                    time_format = (string)key.GetValue("text", "%t");
+                    screen_clear = (int)key.GetValue("screenclear", "10");
+                    display_speed = (int)key.GetValue("displayspeed", "50");
                 }
                 catch (Exception)
                 {
                     //throw;
                 }
             }
+            #endregion
         }
         protected override void LoadContent()
         {
+            var sp1 = Content.ServiceProvider;
+            Content = new ResourceContentManager(sp1, ScreenSaver.Properties.Resources.ResourceManager);
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            sp = Content.Load<SpriteFont>("Gentium Book Basic 14");
+            //sp = Content.Load<SpriteFont>("Gentium Book Basic 14");
+            sp = Content.Load<SpriteFont>("Gentium_Book_Basic_14");
         }
         protected override void UnloadContent()
         {
@@ -542,7 +551,7 @@ namespace ScreenSaver2d
             slen = (int)vec.X;
             shi = (int)vec.Y;
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1; i++)
             {
                 spriteBatch.DrawString(sp, s, new Vector2(r.Next(0, rr.Width - slen), r.Next(0, rr.Height - shi)), HSVtoRGB(r.Next(0, 255)));                
             }
@@ -558,7 +567,7 @@ namespace ScreenSaver2d
                 }
             }
 
-            System.Threading.Thread.Sleep(1);
+            System.Threading.Thread.Sleep(display_speed);
             base.Draw(gameTime);
         }
     }

@@ -57,6 +57,5 @@ C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\Scr
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.Properties.Resources.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.ScreenSaverForm.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\ScreenSaver.csproj.GenerateResource.Cache
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\Gentium Book Basic 14.xnb
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Release\screensaver-time.exe
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Release\screensaver-time.exe

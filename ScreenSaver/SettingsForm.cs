@@ -41,13 +41,15 @@ namespace ScreenSaver
             {
                 textBox.Text = "%t";
                 numericUpDown1.Value = 10;
+                numericUpDown2.Value = 50;
             }
             else
             {
                 try
                 {
-                    textBox.Text = (string)key.GetValue("text");
-                    numericUpDown1.Value = (int)key.GetValue("screenclear");
+                    textBox.Text = (string)key.GetValue("text", "%t");
+                    numericUpDown1.Value = (int)key.GetValue("screenclear", "10");
+                    numericUpDown2.Value = (int)key.GetValue("displayspeed", "50");
                 }
                 catch (Exception)
                 {
@@ -65,7 +67,8 @@ namespace ScreenSaver
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\screensaver-time");
 
             key.SetValue("text", textBox.Text);
-            key.SetValue("screenclear", numericUpDown1.Value.ToString());
+            key.SetValue("screenclear", numericUpDown1.Value.ToString(), RegistryValueKind.DWord);
+            key.SetValue("displayspeed", numericUpDown2.Value.ToString(), RegistryValueKind.DWord);
         }
 
         private void okButton_Click(object sender, EventArgs e)
@@ -77,6 +80,34 @@ namespace ScreenSaver
         private void cancelButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            // http://scripts.sil.org/cms/scripts/page.php?item_id=Gentium_basic
+            System.Diagnostics.Process.Start(@"http://scripts.sil.org/cms/scripts/page.php?item_id=Gentium_basic");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            // http://www.harding.edu/fmccown/screensaver/screensaver.html
+            System.Diagnostics.Process.Start(@"http://www.harding.edu/fmccown/screensaver/screensaver.html");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            // http://ryanwhitworth.com/screensavers/
+            System.Diagnostics.Process.Start(@"http://ryanwhitworth.com/screensavers/");
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SettingsForm_Load(object sender, EventArgs e)
+        {
+            label1.Text = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + " Demo";
         }
     }
 }

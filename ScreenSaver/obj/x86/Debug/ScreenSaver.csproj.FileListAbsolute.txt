@@ -45,15 +45,10 @@ C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Debug\Content\64x64.bm
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Debug\Content\str.jpg
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Debug\Content\Gentium Book Basic 14.xnb
 C:\Users\lithron\Google Drive\screensaver\ScreenSaver\bin\Debug\Content\circle.png
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.csprojResolveAssemblyReference.cache
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.SettingsForm.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\Gentium Book Basic 14.xnb
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\ScreenSaver.exe
-C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\ScreenSaver.pdb
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\MonoGame.Framework.dll
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\SharpDX.MediaFoundation.dll
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\SharpDX.dll
@@ -75,3 +70,7 @@ C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\SharpDX.X
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\SharpDX.RawInput.xml
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\SharpDX.Direct3D9.xml
 C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\ScreenSaver.ScreenSaverForm.resources
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\screensaver-time.exe
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\bin\Debug\screensaver-time.pdb
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\screensaver-time.exe
+C:\Users\lithron\Google Drive\screensaver - time\ScreenSaver\obj\x86\Debug\screensaver-time.pdb
